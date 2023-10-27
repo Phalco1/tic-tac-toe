@@ -1,14 +1,14 @@
 .button-container {
-    position: relative; /* Create a relative positioning context for the button */
-    width: 400px; /* Set the width of the container */
-    height: 400px; /* Set the height of the container */
+    position: relative;
+    width: 400px;
+    height: 400px;
     margin: auto;
     
   }
   
   .move-button {
-    position: absolute; /* Position the button absolutely within its container */
-    top: 50px; /* Move the button 50px from the top */
+    position: absolute;
+    top: 50px;
     left: 42%; 
     margin: auto;
     background-color: #ffe745;

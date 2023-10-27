@@ -13,8 +13,8 @@ const App = () => {
   const [squares, setSquares] = useState(Array(9).fill(null))
   const [xIsNext, setXIsNext] = useState(true);
   const [letterClass, setLetterClass] = useState('text-animate')
-    const nameArray = ['l', 'a', 'y']
-    const jobArray = ['T', 'i', 'c', '-', 'T', 'a', 'c', '-', 'T', 'o', 'e', '!']
+    const letsPlayArray = ['l', 'a', 'y']
+    const gameArray = ['T', 'i', 'c', '-', 'T', 'a', 'c', '-', 'T', 'o', 'e', '!']
 
     useEffect(() => {
          setTimeout(() => {
@@ -32,9 +32,6 @@ const App = () => {
     setXIsNext(!xIsNext)
   }
 
-
-
-  
   const calculateWinner = (squares) => {
     const winningLines = [
       [0, 1, 2], [3, 4, 5], [6, 7, 8], 
@@ -109,11 +106,11 @@ const App = () => {
                 <span className={`${letterClass} _14`}>s</span>
                 <img src={LogoTitle} alt="developer" />
                 <AnimatedLetters letterClass={letterClass}
-                strArray={nameArray}
+                strArray={letsPlayArray}
                 idx={0} />
                 <br />
                 <AnimatedLetters letterClass={letterClass}
-                strArray={jobArray}
+                strArray={gameArray}
                 idx={3} />
                 </h1>
             </div>
